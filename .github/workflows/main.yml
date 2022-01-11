@@ -12,8 +12,9 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Creador del commit *${{ github.actor }}*:
-            Mensaje del commit: _${{ github.event.commits[0].message }}_
+            Creador del commit ${{ github.actor }}:
+            Mensaje del commit: 
+            ${{ github.event.commits[0].message }}
             
             Repositorio: ${{ github.repository }}
             
